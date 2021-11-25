@@ -20,6 +20,6 @@ const counter = createSlice({
     }
 })
 
-export const {increment, decrement, incrementByNum} = counter.actions;
+export const {increment, decrement, incrementByNum} = counter.actions;      //Passed the actions.
 
 export default counter.reducer;
