@@ -4,7 +4,7 @@ const initialValue = {
     count : 0,
 };
 
-const counter = createSlice({
+const counterSliceReducer = createSlice({
     name:"Number",
     initialValue,
     reducer:{
@@ -22,4 +22,4 @@ const counter = createSlice({
 
 export const {increment, decrement, incrementByNum} = counter.actions;      //Passed the actions.
 
-export default counter.reducer;         //Passed the reducer.
+export default counterSliceReducer.reducer;         //Passed the reducer.
