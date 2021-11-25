@@ -4,7 +4,10 @@ import "./App.css"
 const App = () => {
   return (
     <div className="App">
-      App
+      <div>Count is: 3</div>
+      <button>Increment</button>
+      <button>Decerement</button>
+      <button>Increment by 100</button>
     </div>
   )
 }
