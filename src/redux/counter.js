@@ -5,9 +5,9 @@ const initialValue = {
 };
 
 const counterSliceReducer = createSlice({
-    name:"Number",
-    initialValue,
-    reducer:{
+    name:"number",
+    initialState:initialValue,
+    reducers:{
         increment: (state) => {
             state.count += 1;
         },
@@ -20,6 +20,6 @@ const counterSliceReducer = createSlice({
     }
 })
 
-export const {increment, decrement, incrementByNum} = counter.actions;      //Passed the actions.
+export const {increment, decrement, incrementByNum} = counterSliceReducer.actions;      //Passed the actions.
 
 export default counterSliceReducer.reducer;         //Passed the reducer.
