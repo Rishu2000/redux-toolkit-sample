@@ -29,8 +29,7 @@ const booksReducer = createSlice({
             state.books.push(action.payload);
         },
         removeBook: (state, action) => {
-            const newbooksArr = state.books.filter((item) => item.id !== action.payload.id);
-            state.books = [...newbooksArr];
+            state.books = state.books.filter((item) => item.id !== action.payload.id);
         }
     }
 })

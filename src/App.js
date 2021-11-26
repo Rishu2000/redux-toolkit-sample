@@ -6,9 +6,7 @@ import { decrement, increment, incrementByNum } from './redux/counter';
 
 const App = () => {
 
-const state = useSelector((state) => state);
-const {count} = state.counter;
-const {books} = state.bookCounter;
+const {counter:{count}, books:{books}} = useSelector((state) => state);
 
 const dispatch = useDispatch();
 
